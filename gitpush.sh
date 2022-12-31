@@ -1,6 +1,9 @@
 #!/bin/sh
 
 git add .
-git commit -m "asterlinux"
 
-git push
+echo "Enter your commit"
+read input
+
+git commit -m "$input"
+git push -u origin master
